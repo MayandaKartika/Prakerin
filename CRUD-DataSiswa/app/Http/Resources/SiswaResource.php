@@ -15,7 +15,7 @@ class SiswaResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id' => $this->id,
+            'id_siswa' => $this->id_siswa,
             'nama_siswa' => $this->nama_siswa,
             'id_kategori' => $this->id_kategori,
             'jenis_kelamin' => $this->jenis_kelamin,

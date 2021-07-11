@@ -91,6 +91,6 @@ class ApiSiswaController extends Controller
 
         $siswa->delete();
         
-        return response()->json(null);
+        return response()->json(['message' => 'Data has been delete']);
     }
 }

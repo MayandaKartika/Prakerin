@@ -30,7 +30,7 @@ Route::group([
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/user-profile', [AuthController::class, 'userProfile']);    
 });
-Route::get('siswa', 'App\Http\Controllers\SiswaController@index');
-Route::post('siswa', 'App\Http\Controllers\SiswaController@store');
-Route::put('siswa/{id}', 'App\Http\Controllers\SiswaController@update');
-Route::delete('siswa/{id}', 'App\Http\Controllers\SiswaController@destroy');
+Route::get('siswa', 'App\Http\Controllers\ApiSiswaController@index');
+Route::post('siswa', 'App\Http\Controllers\ApiSiswaController@store');
+Route::put('siswa/{id}', 'App\Http\Controllers\ApiSiswaController@update');
+Route::delete('siswa/{id}', 'App\Http\Controllers\ApiSiswaController@destroy');
